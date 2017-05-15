@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>jQuery实现的搜索列表过滤</title>
+    <style>
+
+    </style>
+    <script>
+        function isCon(arr, val){
+            for(var i=0; i<arr.length; i++){
+                if(arr[i] === val)
+                    return true;
+            }
+            return false;
+        }
+        window.onload = function(){
+            var arr=new Array(1,2,3,2,4,2,5,6,7,2,4,3,18,12,41,87);
+//            alert(isCon(arr, 1));
+        }
+        var s=[1,2,3,5,6,9];
+//        var u=s.indexOf(5);//返回5所在的下标3
+        var d=s.indexOf(2);//返回-1
+//        console.log(u);
+        console.log(d);
+    </script>
+</head>
+<body>
+<div id="container">
+
+</body>
+</html>

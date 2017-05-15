@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>外贸圈-资讯社区</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1000">
+        <meta name="Keywords" content="外贸,外贸人才,资讯,招聘,智联,前程无忧,直聘,视频,在线教育,英语,俄语,西班牙语,亚马逊,阿里巴巴,社区,易起秀,Google+,陌陌,微信,福步论坛,服装,报关,海关,国际贸易,外贸培训,出口">
+        <meta name="description" content="外贸圈是帮助求职者解决就业、外贸知识技能提升；为学校解决“学生工作难找”、“就业技能低”、“就业率低”三大问题；为企业解决“招人难”、“用人难”、“外贸知识难掌握”三大难题。全国免费服务热线：4000090361,外贸,外贸人才,资讯,招聘,智联,前程无忧,直聘,视频,在线教育,英语,俄语,西班牙语,亚马逊,阿里巴巴,社区,易起秀,Google+,陌陌,微信,福步论坛,服装,报关,海关,国际贸易,外贸培训,出口">
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <script src="js/jq.js"></script>
+        <script src="js/base.js"></script>
+        <script src="js/ajax.js"></script>
+        <script src="js/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/jquery.qrcode.min.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <div class="headBox clearfix">
+                <div class="headBoxLogo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="headBoxNav">
+                    <ul class="clearfix">
+                        <li>首页</li>
+                        <li>求职招聘</li>
+                        <li>在线学院</li>
+                        <li class="current">资讯社区</li>
+                        <li>H5场景</li>
+                        <li>下载APP</li>
+                    </ul>
+                </div>
+                <div class="login clearfix">
+                    <p id="loginBtn">登录</p>
+                    <p>注册</p>
+                </div>
+                <div class="myPer">
+                    <div class="myPerImg">
+                        <img src="images/titleBg.png" alt="">
+                    </div>
+                    <p>我的</p>
+                    <div class="myPerList">
+                        <ul>
+                            <li>设置</li>
+                            <li id="offLogin">退出登录</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="informMain">
+            <div class="informBaner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/ban1.jpg" alt="" width="1203" height="262"></div>
+                        <div class="swiper-slide"><img src="images/ban2.jpg" alt="" width="1203" height="262"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="informFirstList">
+                <div class="informFirstListHead clearfix">
+                    <div class="informFirstListHeadNav">
+                        <ul class="clearfix">
+                            <li class="current">全部</li>
+                            <li dataId="101">名人堂</li>
+                            <li dataId="104">干货</li>
+                            <li dataId="110">视频</li>
+                            <li dataId="102">实操</li>
+                            <li dataId="103">其他</li>
+                        </ul>
+                    </div>
+                    <div class="informFirstListHeadSearh clearfix">
+                        <div class="informFirstListHeadSearhbox clearfix">
+                            <input type="text" name="" value="" placeholder="输入文章关键字：如外贸圈" class="baseInput">
+                        </div>
+                        <div class="informFirstListHeadSearhBtn">
+                            搜索文章
+                        </div>
+                    </div>
+                </div>
+                <div class="informFirstListHot clearfix">
+                    <div class="informFirstListHotLeft">
+                        <div class="informFirstListHotLeftNav">
+                            <p>排列方式：<span class="new current informFirstListHotLeftNavBtn" sort="0">最新</span><span class="hot informFirstListHotLeftNavBtn" sort="1">最热</span></p>
+                        </div>
+                        <div class="informFirstListHotLeftList">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="informFirstListHotRight">
+                        
+                    </div>
+                </div>
+                <div class="mrt">
+                    <div class="mrtTitle">
+                        <p>名人堂</p>
+                        <a href="informationMRT.html">更多>></a>
+                    </div>
+                    <div class="mrtList">
+                        <ul class="clearfix">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="ganhuo">
+                    <div class="mrtTitle" style="margin-top:0px">
+                        <p>干货</p>
+                        <a href="informationGH.html">更多>></a>
+                    </div>
+                    <div class="ganhuoList clearfix">
+                        <div class="ganhuoListLeft" id="ganhuoLeft">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div class="ganhuoListRight" id="ganhuoRight">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="mrtTitle">
+                        <p>视频</p>
+                        <a href="informationVideo.html">更多>></a>
+                    </div>
+                    <div class="videoList">
+                        <ul class="clearfix">
+                        </ul>
+                    </div>
+                </div>
+                <div class="shicao">
+                    <div class="mrtTitle">
+                        <p>实操</p>
+                        <a href="informationSC.html">更多>></a>
+                    </div>
+                    <div class="shicaoList clearfix">
+                        <div class="shicaoListBig">
+                            <img src="images/timg.jpg" alt="" width="464" height="511">
+                            <p>我是标题</p>
+                        </div>
+                        <div class="shicaoListCenter">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div class="shicaoListRight">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="qita">
+                    <div class="mrtTitle">
+                        <p>其他</p>
+                        <a href="informationQT.html">更多>></a>
+                    </div>
+                    <div class="ganhuoList clearfix">
+                        <div class="ganhuoListLeft" id="qitaLeft">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div class="ganhuoListRight" id="qitaRight">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+
+        </div>
+        <div class="loginBox">
+            <div class="loginBoxClose">
+                <img src="images/close.png" alt="">
+            </div>
+            <div class="loginBoxBtn">
+                <ul class="clearfix">
+                    <li class="current">密码登录</li>
+                    <li>扫码登录</li>
+                    <li>短信登录</li>
+                </ul>
+            </div>
+            <div class="loginTab">
+                <div class="loginTabBox">
+                    <div class="loginTabBoxPhone clearfix">
+                        <div class="loginTabBoxPhoneLabel" bgurl="images/phoneIconSel.png">
+                            手机号
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入正确手机号码" maxlength="11" id="pswPhone">
+                    </div>
+                    <div class="loginTabBoxPw clearfix">
+                        <div class="loginTabBoxPwLabel" bgurl="images/passworkIconSel.png">
+                            密码
+                        </div>
+                        <input type="password" name="" class="loginTabBoxInput" placeholder="请输入正确密码" id="password">
+                    </div>
+                    <div class="loginBtn" id="pswLogin">
+                        登录
+                    </div>
+                </div>
+                <div class="loginTabBox">
+                    <p class="loginTabBoxEwmTitle">使用外贸圈APP扫码登录</p>
+                    <div class="loginTabBoxEwmImg"></div>
+                </div>
+                <div class="loginTabBox">
+                    <div class="loginTabBoxPhone clearfix">
+                        <div class="loginTabBoxPhoneLabel" bgurl="images/phoneIconSel.png">
+                            手机号
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入正确手机号码" maxlength="11" id="yzmPhone">
+                    </div>
+                    <div class="loginTabBoxYzm clearfix">
+                        <div class="loginTabBoxYzmLabel" bgurl="images/yzmIconSel.png">
+                            验证码
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入收到的验证码" id="yzmBox">
+                        <div class="loginTabBoxYzmBox">
+                            <p class="loginTabBoxYzmBtn">获取验证码</p>
+                            <p class="loginTabBoxYzmNum"></p>
+                        </div>
+                    </div>
+                    <div class="loginBtn" id="yzmLogin">
+                        登录
+                    </div>
+                </div>
+                <p class="loginTip">没有账号  <span>立即注册</span></p>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="footTop">
+                <div class="footTopBox clearfix">
+                    <div class="footTopBoxLocation">
+                        <p>公司地址：广东省广州市白云区西槎路聚源街50号园区运营中心10-11楼</p>
+                        <p>公司地址：广东省广州市萝岗区广州科学城创意大厦B2</p>
+                    </div>
+                    <div class="footTopBoxTel">
+                        <p>服务热线</p>
+                        <p>400-009-0361</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footBottom">
+                <div class="footBottomBox">
+                    <ul class="clearfix">
+                        <li>公司介绍</li>
+                        <li>网站首页</li>
+                        <li>求职</li>
+                        <li>在线学院</li>
+                        <li>资讯社区</li>
+                        <li>H5场景</li>
+                        <li>下载APP</li>
+                    </ul>
+                    <p>广州时刻销销网络科技有限公司©Copyright 2015 粤ICP备14057253号-7</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/ji.js"></script>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: '.swiper-pagination',
+                paginationClickable :true,
+                autoplay:3000,
+                speed:300,
+            });
+            login();
+            article();
+        })     
+  </script>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>外贸圈-个人中心-聊天</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1000">
+        <meta name="Keywords" content="外贸,外贸人才,资讯,招聘,智联,前程无忧,直聘,视频,在线教育,英语,俄语,西班牙语,亚马逊,阿里巴巴,社区,易起秀,Google+,陌陌,微信,福步论坛,服装,报关,海关,国际贸易,外贸培训,出口">
+        <meta name="description" content="外贸圈是帮助求职者解决就业、外贸知识技能提升；为学校解决“学生工作难找”、“就业技能低”、“就业率低”三大问题；为企业解决“招人难”、“用人难”、“外贸知识难掌握”三大难题。全国免费服务热线：4000090361,外贸,外贸人才,资讯,招聘,智联,前程无忧,直聘,视频,在线教育,英语,俄语,西班牙语,亚马逊,阿里巴巴,社区,易起秀,Google+,陌陌,微信,福步论坛,服装,报关,海关,国际贸易,外贸培训,出口">
+        <link href="css/base.css" rel="stylesheet">
+        <!--<link href="css/swiper.min.css" rel="stylesheet">-->
+        <script type='text/javascript' src="js/webim.config.js"></script>
+        <script type='text/javascript' src='js/strophe-1.2.8.min.js'></script>
+        <script type='text/javascript' src='js/websdk-1.4.10.js'></script>
+        <script src="js/jq.js"></script>
+        <script src="js/base.js"></script>
+        <script src="js/ajax.js"></script>
+        <!--<script src="js/swiper-3.4.2.jquery.min.js"></script>-->
+        <script src="js/jquery.qrcode.min.js"></script>
+        <script src="js/im.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/zUI.js"></script>
+        <script src="js/ji.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <div class="headBox clearfix">
+                <div class="headBoxLogo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="headBoxNav">
+                    <ul class="clearfix">
+                        <li>首页</li>
+                        <li class="current">求职招聘</li>
+                        <li>在线学院</li>
+                        <li>资讯社区</li>
+                        <li>H5场景</li>
+                        <li>下载APP</li>
+                    </ul>
+                </div>
+                <div class="login clearfix">
+                    <p id="loginBtn">登录</p>
+                    <p>注册</p>
+                </div>
+                <div class="myPer">
+                    <div class="myPerImg">
+                        <img src="images/titleBg.png" alt="">
+                    </div>
+                    <p>我的</p>
+                    <div class="myPerList">
+                        <ul>
+                            <li>设置</li>
+                            <li id="offLogin">退出登录</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="person clearfix">
+            <div class="personSet">
+                <ul>
+                    <li class="current">
+                        <p><span>个人信息</span><i><img src="images/perIconXl.png" alt=""></i></p>
+                        <div class="child">
+                            <a href="">子元素</a>
+                            <a href="">子元素</a>
+                            <a href="">子元素</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>沟通过</span><i><img src="images/perIconXl.png" alt=""></i></p>
+                        <div class="child">
+                            <a href="">子元素</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>个人信息</span><i><img src="images/perIconXl.png" alt=""></i></p>
+                        <div class="child">
+                            <a href="">子元素</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>个人信息</span><i><img src="images/perIconXl.png" alt=""></i></p>
+                        <div class="child">
+                            <a href="">子元素</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="personCon clearfix">
+                <div class="personConLeft">
+                    <div class="personConLeftHead clearfix">
+                        <div class="personConLeftHeadImg">
+                            <img src="images/timg.jpg" alt="">
+                        </div>
+                        <div class="personConLeftHeadText">
+                            Ray
+                        </div>
+                    </div>
+                    <div class="personConLeftSearch">
+                        <input type="text" placeholder="请输入联系人姓名" id="serchKey">
+                        <i></i>
+                    </div>
+                    <div class="personConLeftList" id="side2">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="personConRight">
+                    <div class="personConRightSel">
+                        <p class="tipText">我想要您的一封简历，您是否同意</p>
+                        <div class="personConRightSelBtn clearfix">
+                            <div class="personConRightSelBtnY">
+                                同意
+                            </div>
+                            <div class="personConRightSelBtnN">
+                                拒绝
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personConRightHead clearfix">
+                        <ul class="clearfix">
+                            <li class="tab">职位详情</li>
+                            <li class="tab current">聊天</li>
+                            <li>别人聊天的名字别人聊天的名字别人聊天的名字别人聊天的名字别人聊天的名字别人聊天的名字</li>
+                        </ul>
+                    </div>
+                    <div class="posDetailsRight" id="perdetail">
+                        <div class="posDetailsData clearfix">
+                            <div class="posDetailsDataText">
+                                <p class="title classTitle">外贸经理</p>
+                                <span class="moneyWork">10-20K</span>
+                                <span class="workCity">广州</span>
+                                <span class="workYear">1-3年</span>
+                                <span class="educationStr">本科</span>
+                            </div>
+                        </div>
+                        <div class="posDetailsDataTalk clearfix">
+                            <div class="posDetailsDataTalkImg">
+                                <img src="images/timg.jpg" alt="">
+                            </div>
+                            <div class="posDetailsDataTalkPer">
+                                <p class="name trueName">雷电芽衣</p>
+                                <span class="position">人事经理</span>
+                                <span style="padding-left:30px;color:#999;" class="onlineState">刚刚在线</span>
+                                <p class="address">广州时刻销销公司</p>
+                            </div>
+                        </div>
+                        <div class="posDetailsDataCon">
+                            <p class="jobRequire"></p>
+                            <p class="jobHot"></p>
+                            <p class="jobaddress"></p>
+                        </div>
+                    </div>
+                    <div class="personConRightTalk">
+                        <div class="personConRightTalkDetail clearfix">
+                            <div class="personConRightTalkDetailImg">
+                                <img src="images/timg.jpg" alt="" width="58" height="58">
+                                <p class="wages">10-25K</p>
+                            </div>
+                            <div class="personConRightTalkDetailData">
+                                <p>李丹 | 合伙人</p>
+                                <p>广州 | 2年 | 本科</p>
+                                <p>XXXX公司</p>
+                                <p>沟通职位  外贸经理</p>
+                            </div>
+                        </div>
+                        <div class="personConRightTalkList" id="side3">
+                            <ul class="clearfix">
+                                <li class="me clearfix">
+                                    <div class="meImg">
+                                        <img src="images/timg.jpg" alt="" width="53" height="53">
+                                    </div>
+                                    <div class="meText">
+                                        <p>ddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsaddasdsa</p>
+                                    </div>
+                                </li>
+                                <li class="you clearfix">
+                                    <div class="youImg">
+                                        <img src="images/timg.jpg" alt="" width="53" height="53">
+                                    </div>
+                                    <div class="youText">
+                                        <p>我是底部</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="personConRightChatBox">
+                        <div class="personConRightChatBoxFeatures">
+                            <ul class="clearfix">
+                                <li><img src="images/perbq.png" alt=""><p>发表情</p></li>
+                                <li><img src="images/pertel.png" alt=""><p>发手机</p></li>
+                                <li><img src="images/perwx.png" alt=""><p>发微信</p></li>
+                                <li><img src="images/perjl.png" alt=""><p>发简历</p></li>
+                                <li><img src="images/perno.png" alt=""><p>不合适</p></li>
+                            </ul>
+                        </div>
+                        <div class="personConRightChatBoxEnter">
+                            <textarea></textarea>
+                        </div>
+                        <div class="personConRightChatBoxBtn">
+                            发送
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+
+        </div>
+        <div class="loginBox">
+            <div class="loginBoxClose">
+                <img src="images/close.png" alt="">
+            </div>
+            <div class="loginBoxBtn">
+                <ul class="clearfix">
+                    <li class="current">密码登录</li>
+                    <li>扫码登录</li>
+                    <li>短信登录</li>
+                </ul>
+            </div>
+            <div class="loginTab">
+                <div class="loginTabBox">
+                    <div class="loginTabBoxPhone clearfix">
+                        <div class="loginTabBoxPhoneLabel" bgurl="images/phoneIconSel.png">
+                            手机号
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入正确手机号码" maxlength="11" id="pswPhone">
+                    </div>
+                    <div class="loginTabBoxPw clearfix">
+                        <div class="loginTabBoxPwLabel" bgurl="images/passworkIconSel.png">
+                            密码
+                        </div>
+                        <input type="password" name="" class="loginTabBoxInput" placeholder="请输入正确密码" id="password">
+                    </div>
+                    <div class="loginBtn" id="pswLogin">
+                        登录
+                    </div>
+                </div>
+                <div class="loginTabBox">
+                    <p class="loginTabBoxEwmTitle">使用外贸圈APP扫码登录</p>
+                    <div class="loginTabBoxEwmImg"></div>
+                </div>
+                <div class="loginTabBox">
+                    <div class="loginTabBoxPhone clearfix">
+                        <div class="loginTabBoxPhoneLabel" bgurl="images/phoneIconSel.png">
+                            手机号
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入正确手机号码" maxlength="11" id="yzmPhone">
+                    </div>
+                    <div class="loginTabBoxYzm clearfix">
+                        <div class="loginTabBoxYzmLabel" bgurl="images/yzmIconSel.png">
+                            验证码
+                        </div>
+                        <input type="text" name="" value="" class="loginTabBoxInput" placeholder="请输入收到的验证码" id="yzmBox">
+                        <div class="loginTabBoxYzmBox">
+                            <p class="loginTabBoxYzmBtn">获取验证码</p>
+                            <p class="loginTabBoxYzmNum"></p>
+                        </div>
+                    </div>
+                    <div class="loginBtn" id="yzmLogin">
+                        登录
+                    </div>
+                </div>
+                <p class="loginTip">没有账号  <span>立即注册</span></p>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="footTop">
+                <div class="footTopBox clearfix">
+                    <div class="footTopBoxLocation">
+                        <p>公司地址：广东省广州市白云区西槎路聚源街50号园区运营中心10-11楼</p>
+                        <p>公司地址：广东省广州市萝岗区广州科学城创意大厦B2</p>
+                    </div>
+                    <div class="footTopBoxTel">
+                        <p>服务热线</p>
+                        <p>400-009-0361</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footBottom">
+                <div class="footBottomBox">
+                    <ul class="clearfix">
+                        <li>公司介绍</li>
+                        <li>网站首页</li>
+                        <li>求职</li>
+                        <li>在线学院</li>
+                        <li>资讯社区</li>
+                        <li>H5场景</li>
+                        <li>下载APP</li>
+                    </ul>
+                    <p>广州时刻销销网络科技有限公司©Copyright 2015 粤ICP备14057253号-7</p>
+                </div>
+            </div>
+        </div>
+        <div class="loading"><img src="images/loading.gif" alt="" width="32" height="32"></div>
+    </body>
+    <script src="js/ji.js"></script>
+    <script>
+        $(function(){
+            login();
+            perTalk();
+            $("#side2").panel({iWheelStep:35});
+            $("#side3").panel({iWheelStep:35});
+        })
+  </script>
+</html>
